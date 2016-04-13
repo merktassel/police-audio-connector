@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Police Audio Connector</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+	<script src="js/recorder.js"></script>
+	<script src="js/Fr.voice.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/record.js"></script>
+	<script src='js/app.js'></script>
+</head>
+<body>
+	<div class="navbar-fixed">
+		<nav>
+			<div class="nav-wrapper">
+				<a href="#" class="brand-logo center">Police Audio Connecter</a>
+				<ul class="left hide-on-med-and-down">
+					<li><a href="#" onclick="scan()">Scan</a></li>
+					<li><a href="#" onclick="connect()">Connect</a></li>
+					<li><a href="#" onclick="disconnect()">Disconnect</a></li>
+					<li><a href="#" onclick="forget()">Forget</a></li>
+				</ul>
+				<ul class="right hide-on-med-and-down">
+					<li><a href="#" id="record">Record</a></li>
+					<li><a href="#" id="pause">Stop Recording</a></li>
+					<li><a href="#" id="stop">Reset</a></li>
+					<li><a href="#" id="play">Send</a></li>
+					<li><a href="#" id="download">Download</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+
+	<div class="container">
+		<div class="card">
+			<div class="card-content">
+				<a href="#" class="card-title">Log</a>
+				<pre class="log">Starting Up &#13;&#10;</pre>
+			</div>
+		</div>
+	</div>
+
+	<audio controls="" src="" id="audio"></audio>
+	<form>
+		<input class="button" id="live" type="checkbox">
+		<label for="live">Live Output</label>
+	</form>
+
+</body>
+</html>
